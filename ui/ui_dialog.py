@@ -1,0 +1,91 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'C:\MyPy3\downloadsample\ui\Dialog.ui'
+#
+# Created by: PyQt5 UI code generator 5.8.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Dialog(object):
+    def setupUi(self, Dialog):
+        Dialog.setObjectName("Dialog")
+        Dialog.resize(576, 492)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(Dialog.sizePolicy().hasHeightForWidth())
+        Dialog.setSizePolicy(sizePolicy)
+        self.verticalLayout = QtWidgets.QVBoxLayout(Dialog)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.formLayout_2 = QtWidgets.QFormLayout()
+        self.formLayout_2.setObjectName("formLayout_2")
+        self.label = QtWidgets.QLabel(Dialog)
+        self.label.setObjectName("label")
+        self.formLayout_2.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label)
+        self.formLayout = QtWidgets.QFormLayout()
+        self.formLayout.setObjectName("formLayout")
+        self.apiKey = QtWidgets.QLineEdit(Dialog)
+        self.apiKey.setMinimumSize(QtCore.QSize(410, 0))
+        self.apiKey.setText("")
+        self.apiKey.setObjectName("apiKey")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.apiKey)
+        self.pushButton = QtWidgets.QPushButton(Dialog)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton.sizePolicy().hasHeightForWidth())
+        self.pushButton.setSizePolicy(sizePolicy)
+        self.pushButton.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.pushButton.setObjectName("pushButton")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.pushButton)
+        self.formLayout_2.setLayout(0, QtWidgets.QFormLayout.FieldRole, self.formLayout)
+        self.label_3 = QtWidgets.QLabel(Dialog)
+        self.label_3.setObjectName("label_3")
+        self.formLayout_2.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_3)
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.downloadPath = QtWidgets.QLineEdit(Dialog)
+        self.downloadPath.setObjectName("downloadPath")
+        self.horizontalLayout_2.addWidget(self.downloadPath)
+        self.pushButton_path = QtWidgets.QPushButton(Dialog)
+        self.pushButton_path.setObjectName("pushButton_path")
+        self.horizontalLayout_2.addWidget(self.pushButton_path)
+        self.pushButton_explore = QtWidgets.QPushButton(Dialog)
+        self.pushButton_explore.setObjectName("pushButton_explore")
+        self.horizontalLayout_2.addWidget(self.pushButton_explore)
+        self.formLayout_2.setLayout(1, QtWidgets.QFormLayout.FieldRole, self.horizontalLayout_2)
+        self.label_2 = QtWidgets.QLabel(Dialog)
+        self.label_2.setObjectName("label_2")
+        self.formLayout_2.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_2)
+        self.input_hashes = QtWidgets.QPlainTextEdit(Dialog)
+        self.input_hashes.setObjectName("input_hashes")
+        self.formLayout_2.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.input_hashes)
+        self.verticalLayout.addLayout(self.formLayout_2)
+        self.debugWnd = QtWidgets.QPlainTextEdit(Dialog)
+        self.debugWnd.setObjectName("debugWnd")
+        self.verticalLayout.addWidget(self.debugWnd)
+        self.label_4 = QtWidgets.QLabel(Dialog)
+        self.label_4.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_4.setOpenExternalLinks(True)
+        self.label_4.setObjectName("label_4")
+        self.verticalLayout.addWidget(self.label_4)
+
+        self.retranslateUi(Dialog)
+        QtCore.QMetaObject.connectSlotsByName(Dialog)
+
+    def retranslateUi(self, Dialog):
+        _translate = QtCore.QCoreApplication.translate
+        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+        self.label.setText(_translate("Dialog", "Privat Key"))
+        self.pushButton.setText(_translate("Dialog", "Download"))
+        self.label_3.setText(_translate("Dialog", "Path"))
+        self.downloadPath.setText(_translate("Dialog", "C:/Users/ybha/Downloads"))
+        self.pushButton_path.setText(_translate("Dialog", "Path"))
+        self.pushButton_explore.setText(_translate("Dialog", "Explore"))
+        self.label_2.setText(_translate("Dialog", "hashes"))
+        self.input_hashes.setPlaceholderText(_translate("Dialog", "Supports MD5, SHA256"))
+        self.debugWnd.setPlaceholderText(_translate("Dialog", "status log"))
+        self.label_4.setText(_translate("Dialog", "<a href=\'https://virustotal.com/ko/group/wins21/#vti-usage\'>API usage page</a>"))
+
